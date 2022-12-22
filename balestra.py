@@ -11,4 +11,5 @@ def fluter(fichier_origine,fichier_fin,fichier_destination,n=24):
         for x in range(largeur):
             r0,g0,b0=image_origine.getpixel((x,y))
             r1,g1,b1=image_fin.getpixel((x,y))
+    for i in range
     
