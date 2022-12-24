@@ -13,7 +13,7 @@ def blur(org_file, dest_file, blur_x, blur_y, pos_x, pos_y):
                 r_tmp = []
                 g_tmp = []
                 b_tmp = []
-                for y1 in range(15):
+                for y1 in range(15):    #change the range value for more blur
                     for x1 in range(15):
                         r, g, b = org_img.getpixel((x + x1 ,y + y1))
                         r_tmp.append(r)
@@ -26,8 +26,7 @@ def blur(org_file, dest_file, blur_x, blur_y, pos_x, pos_y):
             
             else:
                 r, g, b = org_img.getpixel((x, y))
-                dest_img.putpixel((x, y),(r, g, b))
-    
+                dest_img.putpixel((x, y), (r, g, b))  
     dest_img.save(dest_file)
     dest_img.show()
 
