@@ -13,6 +13,7 @@ def blur(org_file, dest_file, blur_x, blur_y, pos_x, pos_y):
                 r_tmp = []
                 g_tmp = []
                 b_tmp = []
+                
                 for y1 in range(15):    #change the range value for more blur
                     for x1 in range(15):
                         r, g, b = org_img.getpixel((x + x1 ,y + y1))
@@ -30,4 +31,4 @@ def blur(org_file, dest_file, blur_x, blur_y, pos_x, pos_y):
     dest_img.save(dest_file)
     dest_img.show()
 
-blur('cat.PNG', 'new.PNG', 215, 300, 100, 250)
+blur('./assets/cat.PNG', 'new.PNG', 215, 200, 300, 650)
